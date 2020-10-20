@@ -1,1 +1,37 @@
 http는 HTML에서 확인할 수 있는 request 와 response를 나타낸다.
+
+
+////2020  - 10 - 20
+
+웹 서버는 http 프로토콜로 의사소통 하기 때문에 http 서버라고도 불린다.
+클라이언트가 서버에 http를 요청하고 이에 대하여 서버가 http로 응답하는 과정을 거친다.
+
+어떤 종류의 컨텐츠 소스도 리소스가 될 수 있다
+
+http 는 웹에서 전송되는 객체 각각에 신중하게 mime 타입이라는 데이터 포맥 라벨을 붙이다.
+mime는 / 사선으로 구분되면 앞에는 주타임 뒤에는 부타입을 나타낸다.ex) Content-type : image/jpeg
+
+uri(uniform resource identifier) : 정보리소스를 고유하게 식별하고 위치를 지정할 수있다. 
+클라이언트가 선택하는 관심있는 리소스
+
+url(uniform resource locator) : 리소스 식별자의 가장 흔한 형태다.
+이는 특정 서버의 한 리소스에 대한 구체적인 위치를 서술한다.
+구서 요소로는 스킴(http://) + 주소 + 웹서버의 리소스
+
+※ url 과 uri 가 같은 의미로 사용되기도 한다.
+
+http 는 여러 종류의 method가 있는데 그 중에서 가장 많이 사용되는 것은
+(GET, PUT DELETE, POST, HEAD)등이 있다. 차후 자세히....
+
+http 상태코드 200(좋다), 302(다시 보내라), 404(오류)
+
+http이 메세지 구성은 시작줄 / 헤더 / 본문 으로 이루어져 있다.
+이 중 헤더는  :쌍점으로 구분되며, 빈줄로 끝난다.
+http / 1.0 200 OK (시작줄)
+Content-type : text/plain(헤더)
+Content-length 19
+
+Hello World!(본문)
+
+//////// p 13 까지 공부
+
